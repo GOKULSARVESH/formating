@@ -4,7 +4,7 @@ from ._agent_type import AgentType
 from ._base_agent import BaseAgent, subscription_factory
 from ._subscription_context import SubscriptionInstantiationContext
 from ._type_subscription import TypeSubscription
-from .exceptions import CantHandleException
+# from .exceptions import CantHandleException
 
 
 class DefaultSubscription(TypeSubscription):
@@ -33,7 +33,7 @@ BaseAgentType = TypeVar("BaseAgentType", bound="BaseAgent")
 
 
 @overload
-def default_subscription() -> Callable[[Type[BaseAgentType]], Type[BaseAgentType]]: ...
+# def default_subscription() -> Callable[[Type[BaseAgentType]], Type[BaseAgentType]]: ...
 
 
 @overload
